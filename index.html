@@ -1,4 +1,5 @@
 
+
 <!doctype html>
 
 <!-- This entire layout structure is taken from CS50s finance implementation https://finance.cs50.net/login -->
@@ -19,7 +20,7 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <!-- own additional style sheet -->
-        <link href="../static/styles.css" rel="stylesheet">
+        <link href="./static/styles.css" rel="stylesheet">
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -42,7 +43,7 @@
         <meta name="robots" content="noindex">
 
         <title>Zhengpei Cheng</title>
-        <link rel="icon" href="../static/img/home.png">
+        <link rel="icon" href="./static/img/home.png">
 
         <!-- mobile first bootstrap -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -52,7 +53,7 @@
 
     <body>
 
-        <nav class="navbar navbar-expand-md navbar-light portfolio-navbar-custom sticky-top">
+        <nav class="navbar navbar-expand-md navbar-light index-navbar-custom sticky-top">
             <div class="container">
                 <a class="navbar-brand" id="name-color" href="/en">Zhengpei Cheng</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -61,13 +62,13 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mr-auto mt-2">
                         <li class="nav-item">
-                            <a class="nav-link" id="navbar-color" href="/en/index">Home</a>
+                            <a class="nav-link" id="navbar-color" href="./index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="navbar-color" href="/en/portfolio">Portfolio</a>
+                            <a class="nav-link" id="navbar-color" href="./en/portfolio.html">Portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="navbar-color" href="/en/about">About me</a>
+                            <a class="nav-link" id="navbar-color" href="./en/about.html">About me</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav ml-auto mt-2">
@@ -82,18 +83,18 @@
             </div>
         </nav>
 
-        <section class="title-color" id="portfolio-title">
+        <section class="title-color" id="index-title">
             <div class="container title-container">
                 <div class="row title-text">
                     <div class="col-12 col-sm-11 col-md-9 col-lg-8 additional-margin">
                         <div class="title-description">
-                            <p>Supervised machine learning, deep learning, times series analysis, NLP or HEOR - my portfolio of projects consists of different topics and I continuously expand it. As part of my Master thesis I used the BERT NLP model to analyze thousands of EHRs medical notes part. The rest of my projects are presented below with links to the code, blog posts and deployed projects.</p>
+                            <p>I am a  hobby programmer and data scientist and particularly interested in the intersection of data science with different domains, espacially healthcare domain.</p>
                         </div>
                     </div>
                 </div>
                 <div class="row title-text">
                     <div class="col-auto additional-margin">
-                        <p>PROJECT PORTFOLIO</p>
+                        <p>DATA SCIENCE &amp; HEALTHCARE</p>
                     </div>
                 </div>
             </div>
@@ -103,205 +104,38 @@
 
     <section class="home-content">
         <div class="container">
-            
             <div class="row portfolio-row justify-content-center">
-                
-                    
-                        <div class="col-12 col-md-6">
-                            <div class="portfolio-text text-center">
-                                <a target="_blank" class="title-link" href="https://github.com/kouji175/HEOR_RWE_Atrial_Fibrillation_Patients"><h5>The real world evidence (RWE) on treatment patterns, effectiveness, and safety of drugs forstroke prevention in Atrial Fibrillation patients in USA in selected cohort groups</h5></a>
-                                <p class="project-des">
-                                    Code for one of my project that applied SAS to transform, load and analyze Real World Data.
-                                </p>
-                                <p class="skills">
-                                    <span class="bold">Skills:</span> SAS, Survival Analysis, SQL, ICD-10, LOINC, T-test, Chi-square test
-                                </p>
-                            </div>
-                            <div class="row">
-                                <div class="image">
-                                    <a target="_blank" href="https://github.com/kouji175/HEOR_RWE_Atrial_Fibrillation_Patients">
-                                        <img class="portfolio-img" src="../static/img/km_plot.png">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="row button-row">
-                                
-                                    
-                                        <div class="col-12 text-center">
-                                            <a target="_blank" href="https://github.com/julianikulski/director-experience-sustainability" class="button btn portfolio-btn rounded-0">Code</a>
-                                        </div>
-                                    
-                                
-                            </div>
-                        </div>
-                        
-                        <div class="col-12 col-md-6">
-                            <div class="portfolio-text text-center">
-                                <a target="_blank" class="title-link" href="https://github.com/kouji175/Predict_Credit_Application_Result/tree/main"><h5>Credit card approval prediction</h5></a>
-                                <p class="project-des">
-                                    Built an automatic credit card approval predictor using machine learning techniques, just like the real banks do.
-                                </p>
-                                <p class="skills">
-                                    <span class="bold">Skills:</span> Python, ETL, Feature Engineering, ML Pipelines, Neural Net, Random Forest, AdaBoost, Gradient Boosting, SGD, SVM,
-                                </p>
-                            </div>
-                            <div class="row">
-                                <div class="image">
-                                    <a target="_blank" href="https://github.com/kouji175/Predict_Credit_Application_Result/tree/main">
-                                        <img class="portfolio-img" src="../static/img/Credit_Card_Analyze.png">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="row button-row">
-                                
-                                    
-                                        <div class="col-12 text-center">
-                                            <a target="_blank" href="https://github.com/julianikulski/disaster-response-pipeline" class="button btn portfolio-btn rounded-0">Code</a>
-                                        </div>
-                                    
-                                
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-md-6">
-                            <div class="portfolio-text text-center">
-                                <a target="_blank" class="title-link" href=https://github.com/kouji175/EveningClinicTeleVisitAnalysis><h5>Evening Clinic Tele Visit Analysis</h5></a>
-                                <p class="project-des">
-                                    Use the visit data to determine how to staff for the evening appointments and evaluate the effectiveness of the program.
-                                </p>
-                                <p class="skills">
-                                    <span class="bold">Skills:</span> Python, ANOVA, Hypothesis test, MLR
-                                </p>
-                            </div>
-                            <div class="row">
-                                <div class="image">
-                                    <a target="_blank" href=https://github.com/kouji175/EveningClinicTeleVisitAnalysis>
-                                        <img class="portfolio-img" src="../static/img/after_hour.png">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="row button-row">
-                                <div class="col-12 text-center">
-                                            <a target="_blank" href="https://github.com/kouji175/EveningClinicTeleVisitAnalysis" class="button btn portfolio-btn rounded-0">Code</a>
-                                </div>
-                            </div>
-                        </div>
-
-            
-            <div class="row portfolio-row justify-content-center">
-                
-                    
-                        <div class="col-12 col-md-6">
-                            <div class="portfolio-text text-center">
-                                <a target="_blank" class="title-link" href="https://github.com/kouji175/Pregnant-Visited-OBGYN-In-Timely-Manner"><h5>Pregnant visited OBGYN in timely mannar</h5></a>
-                                <p class="project-des">
-                                   Find the proportion of pregnancy who visited OBGYN in timely mannar.
-                                </p>
-                                <p class="skills">
-                                    <span class="bold">Skills:</span> Python, Data Cleaning, EDA
-                                </p>
-                            </div>
-                            <div class="row">
-                                <div class="image">
-                                    <a target="_blank" href="https://github.com/kouji175/Pregnant-Visited-OBGYN-In-Timely-Manner">
-                                        <img class="portfolio-img" src="../static/img/Pregnancy_Analysis.png">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="row button-row">
-                                        <div class="col-12 text-center">
-                                            <a target="_blank" href="https://github.com/kouji175/Pregnant-Visited-OBGYN-In-Timely-Manner" class="button btn portfolio-btn rounded-0">Code</a>
-                                        </div>   
-                            </div>
-                        </div>
-                    
-                        <div class="col-12 col-md-6">
-                            <div class="portfolio-text text-center">
-                                <a target="_blank" class="title-link" href="https://github.com/kouji175/Predict_Customer_Default/tree/main"><h5>Customer Default Prediction Project</h5></a>
-                                <p class="project-des">
-                                    This project utilizes machine learning techniques to predict customer defaults based on loan data, aiding in effective risk management for financial institutions.
-                                </p>
-                                <p class="skills">
-                                    <span class="bold">Skills:</span> Decision Forest, Logistic Regression, Python, Pandas, Predictive Modeling, Statistical Analysis
-                                </p>
-                            </div>
-                            <div class="row">
-                                <div class="image">
-                                    <a target="_blank" href="https://github.com/kouji175/Predict_Customer_Default/tree/main">
-                                        <img class="portfolio-img" src="../static/img/Predict_default.png">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="row button-row">
-                                    
-                                
-                                    
-                                        <div class="col-12 text-center">
-                                            <a target="_blank" href="https://github.com/kouji175/Predict_Customer_Default/tree/main" class="button btn portfolio-btn rounded-0">Code</a>
-                                        </div>
-                                    
-                                
-                            </div>
-                        </div>
-            
-            
-            <div class="row portfolio-row justify-content-center">
-                
-                    
-                        <div class="col-12 col-md-6">
-                            <div class="portfolio-text text-center">
-                                <a target="_blank" class="title-link" href="https://github.com/kouji175/Gas-Price-Prediction/tree/main"><h5>Gas Price Prediction</h5></a>
-                                <p class="project-des">
-                                    Explore and predict natural gas prices with a comprehensive time series analysis approach, leveraging seasonal decomposition and trend analysis for accurate forecasting.
-                                </p>
-                                <p class="skills">
-                                    <span class="bold">Skills:</span> Python, Numpy, Pandas, Time-series Analysis
-                                </p>
-                            </div>
-                            <div class="row">
-                                <div class="image">
-                                    <a target="_blank" href="https://github.com/kouji175/Gas-Price-Prediction/tree/main">
-                                        <img class="portfolio-img" src="../static/img/Gas_Price.png">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="row button-row">
-                                
-                                    
-                                        <div class="col-12 text-center">
-                                            <a target="_blank" href="https://github.com/kouji175/Gas-Price-Prediction/tree/main" class="button btn portfolio-btn rounded-0">Code</a>
-                                        </div>
-                            </div>
-                </div>    
- 
-                <div class="row portfolio-row justify-content-center">
-                
-                    
-                    <div class="col-12 col-md-6">
-                        <div class="portfolio-text text-center">
-                            <a target="_blank" class="title-link" href="https://github.com/kouji175/Bladder-Cancer-RNA-Analysis"><h5>Gas Price Prediction</h5></a>
-                            <p class="project-des">
-                                Explore the genomic landscape of bladder cancer through in-depth RNA-Seq analysis to identify key differentially expressed genes and pathways involved in tumor pathology.
-                            </p>
-                            <p class="skills">
-                                <span class="bold">Skills:</span>R, PCA,Bioinformatics, Differential Gene Expression Analysis, BiocManager
-                            </p>
-                        </div>
-                        <div class="row">
-                            <div class="image">
-                                <a target="_blank" href="https://github.com/kouji175/Bladder-Cancer-RNA-Analysis">
-                                    <img class="portfolio-img" src="../static/img/Heatmap.png">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="row button-row">
+                <div class="col-12 col-md-6">
+                    <div class="row justify-content-center">
+                        <div class="text-center">
                             
-                                
-                                    <div class="col-12 text-center">
-                                        <a target="_blank" href="https://github.com/kouji175/Bladder-Cancer-RNA-Analysis">Code</a>
-                                    </div>
+                                <h2 class="index-header">My latest project</h2>
+                            
                         </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="row index-img text-center">
+                            <h5>The real world evidence (RWE) on treatment patterns, effectiveness, and safety of drugs forstroke prevention in Atrial Fibrillation patients in USA in selected cohort groups</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="image">
+                            
+                            <a target="_blank" href="https://github.com/kouji175/HEOR_RWE_Atrial_Fibrillation_Patients">
+                                <img class="portfolio-img" src="./static/img/km_plot.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="index-bottom text-center">
+                        <p>
+                            
+                                <a class="about-link" href="./en/portfolio.html">This way</a> to see more of my projects.
+                            
+                        </p>
+                    </div>
+                </div>
             </div>
+        </div>
     </section>
 
 
